@@ -12,7 +12,7 @@ body {
     background: #e5e5e5;
 }
 
-header > svg {
+header > a {
     margin-left: 44px;
     float: left;
 }
@@ -116,4 +116,29 @@ button:hover{
     line-height: 24px;
     color: #495057;
     margin: 0 auto;
+}
+
+
+footer{
+    position: absolute;
+    width: 180px;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-inline: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+footer:hover {
+    opacity: 1;
 }
