@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+body {
+    padding: 40px;
+    background: #e5e5e5;
+}
+
+header > svg {
+    margin-left: 44px;
+    float: left;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.entrada {
+    margin: 80px 0 0 156px;
+    width: 48%;
+}
+
+textarea{
+    border: none;
+    background: none;
+    padding: 4px;
+    font-size: 32px;
+    line-height: 48px;
+    color: #0a3871;
+    width: 100%;
+}
+
+textarea::placeholder {
+    font-size: 32px;
+    line-height: 48px;
+    color: #0a3871;
+}
+
+.aviso {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.aviso span {
+    color: #495057;
+    opacity: 0.8;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+button {
+    padding: 22px;
+    font-size: 16px;
+    font-weight: 400;
+    width: 330px;
+    height: 67px;
+    border-radius: 24px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.botoes{
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.criptografar{
+    background: hsl(213, 84%, 24%);
+    border: none;
+    color: white;
+    transition:  0.4s;
+}
+
+.criptografar:hover{
+    background: hsl(213, 84%, 20%);
+    text-decoration: underline;
+}
+
+.descriptografar {
+    background: #d8dfe8;
+    border: 1.5px solid hsl(213, 84%, 24%);
+    color: hsl(213, 84%, 24%);
+}
+
+.descriptografar:hover {
+    background: hsl(214, 49%, 86%);
+    text-decoration: underline;
+}
+
+.mensagem {
+    padding: 32px;
+    margin-left: 80px;
+    width: 30%;
+    background: #FFF;
+    text-align: center;
+}
+
+.mensagem h2 {
+    margin: 32px 0 16px 0;
+}
+
+.mensagem p {
+    width: 336px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #495057;
+    margin: 0 auto;
+}
