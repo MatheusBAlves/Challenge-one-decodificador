@@ -12,7 +12,7 @@ body {
     background: #e5e5e5;
 }
 
-header > a {
+header>a {
     margin-left: 44px;
     float: left;
 }
@@ -27,7 +27,7 @@ main {
     width: 48%;
 }
 
-textarea{
+textarea {
     border: none;
     background: none;
     padding: 4px;
@@ -35,6 +35,7 @@ textarea{
     line-height: 48px;
     color: #0a3871;
     width: 100%;
+    resize: none;
 }
 
 textarea::placeholder {
@@ -65,24 +66,24 @@ button {
     border-radius: 24px;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
 }
 
-.botoes{
+.botoes {
     margin-top: 16px;
     display: flex;
     justify-content: space-between;
 }
 
-.criptografar{
+.criptografar {
     background: hsl(213, 84%, 24%);
     border: none;
     color: white;
-    transition:  0.4s;
+    transition: 0.4s;
 }
 
-.criptografar:hover{
+.criptografar:hover {
     background: hsl(213, 84%, 20%);
     text-decoration: underline;
 }
@@ -121,12 +122,15 @@ button:hover{
     margin: 0 auto;
 }
 
+.div-aparece button {
+    width: 98%;
+}
+
 .desaparece {
     display: none;
 }
 
-
-footer{
+footer {
     position: fixed;
     width: 180px;
     font-size: 14px;
@@ -148,4 +152,84 @@ footer a {
 
 footer:hover {
     opacity: 1;
+}
+
+@media (max-width: 1300px){
+
+    body{
+        padding: 30px;
+    }
+
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .entrada {
+        margin: 0;
+        width: 75%;
+    }
+
+    textarea {
+        line-height: 28px;
+    }
+
+    .mensagem-box {
+        margin: 15px;
+        width: 75%;
+        border-radius: 22px;
+    }
+    .mensagem-box h2 {
+        margin: 0 0 16px 0 ;
+    }
+    .mensagem-box p {
+        width: auto;
+    }
+
+    .sem-mensagem img {
+        display: none;
+    }
+
+    .mensagem {
+        height: auto;
+    }
+
+
+    footer{
+        position: relative;
+    }
+}
+
+@media (max-width: 700px){
+    header a {
+        margin-left: 20px;
+        float: none;
+    }
+
+    main {
+        margin-top: 25px;
+    }
+
+    .entrada {
+        width: 90%;
+    }
+
+
+    .mensagem-box {
+        width: 90%;
+    }
+}
+
+@media (max-width: 460px){
+    .botoes {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .botoes button {
+        width: 98%;
+    }
+
+    .mensagem-box{
+        padding: 10px;
+    }
 }
